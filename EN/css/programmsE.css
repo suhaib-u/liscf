@@ -1,0 +1,130 @@
+/* Video Background */
+.video-background {
+    position: relative;
+    height: 75vh;
+    overflow: hidden;
+    background-color: rgba(45, 102, 139, 0.9);
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Root Variables */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --text-color: #333;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f8f9fa;
+    line-height: 1.6;
+}
+
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+/* Main Content */
+.main-content {
+    margin-top: 80px;
+    padding: 2rem 1rem;
+    min-height: calc(100vh - 160px);
+}
+
+.hero-section {
+    text-align: center;
+    padding: 4rem 1rem;
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    margin-top: 150px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* Paragraph Styling */
+.pp {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+/* Headings */
+h1 {
+    font-family: 'Arial', sans-serif; /* Updated font for English */
+    position: relative;
+    display: block;
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 500;
+    transition: all 500ms ease;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif; /* Updated font for English */
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 800;
+}
+
+/* Feature Icon */
+.feature-icon {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}

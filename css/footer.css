@@ -1,0 +1,39 @@
+  /* التذييل */
+  footer {
+    background-color:  rgba(45, 102, 139, 0.9);
+    color: white;
+    padding: 3rem 1rem;
+    margin-top: auto;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.footer-section h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+.footer-section ul {
+    list-style: none;
+}
+.footer-section li {
+    margin-bottom: 0.8rem;
+}
+.footer-section a {
+    color: #ddd;
+    text-decoration: none;
+}
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.social-links a {
+    font-size: 1.5rem;
+    color: white;
+}
